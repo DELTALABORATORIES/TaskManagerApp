@@ -6,17 +6,18 @@
 @keyframes task-transition {
     from{
         background-color: white;
+        color:#929292;
     }
     to{
         background-color: #ff7a00;
         border: none;
+        color:white;
     }
 }
 
 body {
     color: #5D5F63;
-    background-size : cover;
-    background-image: url("../assests/images/background-image.jpg");
+    background-color: white;
     font-family: 'Open Sans', sans-serif;
     padding: 0;
     margin: 0;
@@ -146,6 +147,8 @@ body {
     border-right: solid 2px #929292;
     border-top: solid 2px #929292;
     border-left:none;
+    color:#929292;
+    overflow: hidden;
 }
     .task:hover{
         width:100%;
@@ -157,8 +160,27 @@ body {
         border-style: none;
         animation-name: task-transition;
         animation-duration: 0.3s;
+        color:white;
+        overflow: hidden;
     }
 
+.task-name{
+    padding:13px 0px 0px 20px;
+    text-align: left;
+    font-size: 26px;
+}
+
+.task-date{
+    padding:0px 0px 0px 20px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.task-content{
+    padding:0px 0px 0px 20px;
+    text-align: left;
+    font-size: 16px;
+}
 /*.task{
     width:100%;
     position: relative;

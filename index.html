@@ -1,111 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="vendor/ckeditor-full/ckeditor.js"></script>
+    <meta charset="utf-8" />
+    <title>Sign IN | DELTA</title>
+    <link href="css/Login_Page.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Anton|Fresca|Indie+Flower|Montserrat|Poppins" rel="stylesheet">
+    <link rel="icon" href="assests/images/Logos/DELTA_Network-normal.ico" type="image/x-icon">
 </head>
-
 <body>
+   <div class="Main">
+       <div class="AboutUs">
+           <p class="WelcomeText">
+               WELCOME TO DELTA <br><br> "Note-taking for developer"
+           </p>
+           <p class="Description">
+               "Your markdown notes are saved automatically as you write and various formatting options have semi-live previews so you can double check what you’re writing. Text is formatted as you type.
 
-    <!--Sidebar Menu-->
-
-    <div class=" menubar-container">
-        <div style="width: 100%;margin-top: 20px;">
-           <img src="http://iconshow.me/media/images/System/plex-icons/png/System/512/task-manager.png" style="width:60%;">
-        </div>
-        <div style="width: 100%;margin-top: 60px;">
-            <i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
-        </div>
-        <div style="width: 100%;margin-top: 20px;">
-            <i class="fa fa-calendar-plus-o fa-2x" aria-hidden="true"></i>
-        </div>
-        <div style="width: 100%;margin-top: 20px;">
-            <i class="fa fa-search fa-2x" aria-hidden="true"></i>
-        </div>
-        <div style="width: 100%;margin-top: 20px;">
-            <i class="fa fa-star fa-2x" aria-hidden="true"></i>
-        </div>
-        <div style="width: 100%;margin-top: 20px;">
-            <i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
-        </div>
-        <div style="width: 100%;margin-top: 20px;">
-            <i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
-        </div>
-    </div>
-
-    <!--Notes Preview-->
-
-    <div class="task-container-main">
-        <div class="task-container">
-            <div class="notes">
-                <p class="notes-text">
-                    Notes
-                </p>
-                <p class="notes-count">
-                   24 Notes
-                </p>
-            </div>
-
-            <div class="task">10px
-                w
-            </div>
-
-            <div class="task">10px
-                w
-            </div>
-
-            <div class="task">10px
-                w
-            </div>
-
-            <div class="task">10px
-                w
-            </div>
-            <div class="task">10px
-                w
-            </div>
-            <div class="task">10px
-                w
-            </div>
-            <div class="task">10px
-                w
-            </div>
-            <div class="task">10px
-                w
-            </div>
-            <div class="task">10px
-            w
-            </div>
-        </div>
-
-    </div>
-
-    <div class="note-editor-container">
-        <div class="note-information">
-             <p class="note-name">
-                 Note Name
-             </p>
-        </div>
-        <form>
-            <textarea name="note-editor" id="note-editor" >
-                New Note
-            </textarea>
-        </form>
-    </div>
-
-    <script>
-        CKEDITOR.replace( 'note-editor', {
-            language: 'fr',
-            uiColor: '#FFFFFF'
-        });
-    </script>
-<script src="https://use.fontawesome.com/5c3c4c27b7.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src="js/mainController.js"></script>
+               For code snippets the app is able to highlight code syntax in more than 100 languages, including Javascript, Python, HTML and CSS and you can store multiple code snippets within the same snippet."</p>
+       </div>
+       <div class="SignInForm">
+           <div class="SignIn">
+               <img src="assests/images/Logos/DELTA Network-normal.png" alt="" id="SignInLogo" />
+               <hr id="hrLong"/>
+               <hr id="hrShort"/>
+               <div class="FormContainer">
+                   <form action="PHP/SignIn.php" method="post">
+                       <input id="InputUsername" type="text" placeholder="      E-Mail" name="logInEMAIL"/>
+                            <div style="margin-top:20px;">
+                                <input id="InputPassword" type="password" placeholder="      Password" name="logInPASSWORD"/>
+                            </div>
+                      <input id="SignIn" type="submit" value="Sign In"  />
+                   </form>
+               </div>
+               <p class="Register">
+                   DO NOT HAVE AN ACCOUNT   <a href="registration_form.html" style="margin-left:5px;">SIGN UP</a>
+               </p>
+           </div>
+       </div>
+   </div>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

@@ -1,5 +1,18 @@
 @import url('http://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
 @import url('//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css');
+
+/*Aniations*/
+
+@keyframes task-transition {
+    from{
+        background-color: white;
+    }
+    to{
+        background-color: #ff7a00;
+        border: none;
+    }
+}
+
 body {
     color: #5D5F63;
     background-size : cover;
@@ -9,12 +22,16 @@ body {
     margin: 0;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
+    display: flex;
+    text-align: center;
 }
+/*
 .sidebar-toggle {
     margin-left: -240px;
 }
 .sidebar {
-    width: 240px;
+    float: left;
+    width: 100%;
     height: 100%;
     background: #293949;
     position: absolute;
@@ -24,6 +41,7 @@ body {
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     z-index: 100;
+    min-height:100vh;
 }
 .sidebar #leftside-navigation ul,
 .sidebar #leftside-navigation ul ul {
@@ -81,4 +99,97 @@ body {
     padding-top: 13px;
     padding-bottom: 13px;
     color: #aeb2b7;
+}
+*/
+.menubar-container{
+    height: 100vh;
+    min-width:72px;
+    max-width:72px;
+    padding: 0;
+    background-color: #F8F8F8;
+    border-right: solid 2px #929292;
+}
+/*---- Task section ----*/
+.task-container-main{
+    padding: 0;
+    min-width: 350px;
+    width:23%;
+}
+.task-container{
+    width:100%;
+    overflow-y: scroll;
+    height:100vh;
+}
+.notes{
+    background-color: white;
+    height:100px;
+}
+.notes-text{
+    padding:20px 20px 0px 20px;
+    text-align: left;
+    color:#929292;
+    font-size: 32px;
+}
+.notes-count{
+    padding:0px 0px 0px 20px;
+    text-align: left;
+    color:#929292;
+    font-size: 16px;
+}
+.task{
+    width:100%;
+    position: relative;
+    background-color: #FFFFFF;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    display: inline-block;
+    height:180px;
+    border-right: solid 2px #929292;
+    border-top: solid 2px #929292;
+    border-left:none;
+}
+    .task:hover{
+        width:100%;
+        position: relative;
+        background-color: #ff7a00;
+        box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+        display: inline-block;
+        height:180px;
+        border-style: none;
+        animation-name: task-transition;
+        animation-duration: 0.3s;
+    }
+
+/*.task{
+    width:100%;
+    position: relative;
+    background-color: #FFFFFF;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    display: inline-block;
+    height:180px;
+    border-style: solid;
+    border-top-style: none;
+    border-color: #929292;
+    border-width: 2px;
+}*/
+
+.note-editor-container{
+    width:77%;
+    background-color: white;
+    min-width:850px;
+
+}
+.note-information{
+    height:60px;
+    background-color: whitesmoke;
+}
+.note-name{
+    padding:10px 10px ;
+    text-align: left;
+    color:#929292;
+    font-size: 32px;
+}
+#note-editor{
+    resize: none;
+    height: 1000px;
+    resize: none;
 }

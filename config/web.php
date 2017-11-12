@@ -48,6 +48,9 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                '' => 'login/render',
+                'sign_up' => 'signup/render',
+                'dashboard' => 'dashboard/render',
             ],
         ],
 

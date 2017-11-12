@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "task-manager-6ee5b",
+  "private_key_id": "b82360fd0d46feba0166fa50c9ca740c7bc91f6e",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDQf5pxe1h8dE1B\n9oaOaqPtJiuCvtzAjqP8Ml9VDItkWH4/rbpA5JRcsbe5dm2tj0KrUllm7Kmv34g+\ngBYdi8/5ayTPbNYtsTUPkCX/XQ3atHStDfSasmZ3OlFY8nrwfQNWXwXpPxa734u4\neYucyCodj34f2ySAwFpvasTExvBMWG1xvgiQEoEwr/lCDcVjafE1vw6hXIMU+Ky6\n30prc3xCaN122x7UN/1rO98AQkCVPLfH3qNV4l4/zuLe12Vt369LFtvL09asodpR\ntr9tFrEQSaaG0tduPn5cHPMD5Uqjm+65wCOTBmaw6uCdWJC0M1eBAoTQwVq0GHxE\nmkXjDHwlAgMBAAECggEACor38mGS6PYmOvM+PMDX3wPFWE7nkZAU6t7ZiGQs6esk\nn8/cgXAIMC4SCigwJcIpqZ6YI+F3N3a1kw1923VzU9t5s3MU2x92Z/35bJHWGRdI\nvWsdfDNlsC/hfFPZ6MO1hxOhKaPK9enjojV5MbltvGwXVqve4GjO7zUw/nnzHYpq\nyRu4Ap7c1SLnd78+fcLyZeqKElSrnK3Gk8Q9AUS+dTN0gC5JdUrBhnZI8rurd1p/\nex/2OFQxKYiHXfJwSZ0YRBkB+N2AiqSd7t+/06ciod+EASw+chEs62+mhjkq2hzj\nUqVuHgvF8N7UkdPL1aZMC3iOx8Xhh7YQrqQ8bbjnUQKBgQDqBTHx6PCUEW9BXSE8\n3RZJrdIwZ5Y7gJ0ucz74KeDKyD9cd9vJG8HDa78QqzMMe9eZNZSVERan95wPxuSL\nh6cwvvO3ZbNMfscXTxn8GZb4lFlih6ifYxMAOhB1AVQULF1725OdcSWhbyweRDIP\nfOjTVnD1pi+N2zO5klHlAItkUQKBgQDkFMI7SCGdTBQAemzINDpKjUeXuc3awkJN\nickqY2BcPHCO7Dqr4V/5LmmIWUyM48rvT4sUe/WC60wPk2Ik0kEUEBDG7GO6i7N2\nHW+qagbSWxU+4JL0TbYeawgfzPDhi+IiLXiGJaVdxptnEleDh/6IR0jn0TlRsNar\nr4pMqVBJlQKBgBc/4uFkwhoDzWjSBs5ULLWvNjWm5O8ObQ9DVdsz1ehvkpPuOIC3\naD2xA691QsIXv6iyAQv6QaT4XaHXobcXCA44ul/bE8AizEbNjghUxoH1wxed4KvN\nHQMlwaLOOfszGSqH+xdmOVXbhKeRIOQXBc6RRPGyzACs6WujVM2Ki06xAoGBAI76\nAGRfLEtJ1MQT+rtqGhyAAiA35ra6zguDU2rSDybi8IB3z7PNvXccRCWoLReo+J8a\nEwqNRnOCgxTEhGKmtwsXoxzANShMyPxDKav/eTVGycO3zgd966uX1ujwdRQ+t0xL\niuE1Gjv185ciZV/b0ZCmdypy+uad34SSrzStctodAoGAeHI+SwW54K+bfPrxL9hZ\nS3V4uAaJIrC/hio2xOUygmFYpwpk6QybWDunWsPcshNozRHUoglwE3wNfFOaLYvH\n2yJ+FGImYZEAczuE58ijad6tvaZhlSjOCjdA4dWNDoyr0OyTVucdEIeI1iJHWwh9\ngL1oa+14uxoIkDh2U5QcXj8=\n-----END PRIVATE KEY-----\n",
+  "client_email": "backend-service-account@task-manager-6ee5b.iam.gserviceaccount.com",
+  "client_id": "105611089816852244737",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/backend-service-account%40task-manager-6ee5b.iam.gserviceaccount.com"
+}

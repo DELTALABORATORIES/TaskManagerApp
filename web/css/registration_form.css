@@ -21,7 +21,7 @@ html, body {
     width: 100%;
     min-height: 100%;
     overflow: hidden;
-    background: url(../assests/images/Registration_Form/pexels-photo-248700.jpeg) no-repeat center;
+    background: url(../../images/Registration_Form/pexels-photo-248700.jpeg) no-repeat center;
     background-size: cover;
 }
 .SignUp {

@@ -35,7 +35,7 @@ html, body {
     width: 100%;
     min-height: 100%;
     overflow: hidden;
-    background: url(../assests/images/Login_Page/background-image-2.jpeg) no-repeat center bottom;
+    background: url(../../images/Login_Page/background-image-2.jpeg) no-repeat center bottom;
     background-size: cover;
 }
 .AboutUs {

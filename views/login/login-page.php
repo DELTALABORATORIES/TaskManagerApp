@@ -21,7 +21,7 @@
        </div>
        <div class="SignInForm">
            <div class="SignIn">
-               <img src="../../mages/Logos/DELTA Network-normal.png" alt="" id="SignInLogo" />
+               <img src="../../images/Logos/DELTA Network-normal.png" alt="" id="SignInLogo" />
                <hr id="hrLong"/>
                <hr id="hrShort"/>
                <div class="FormContainer">
@@ -30,11 +30,11 @@
                             <div style="margin-top:20px;">
                                 <input id="InputPassword" type="password" placeholder="      Password" name="logInPASSWORD"/>
                             </div>
-                      <input id="SignIn" type="submit" value="Sign In"  />
+                      <a href="dashboard"><input id="SignIn" value="Sign In"  /> </a>
                    </form>
                </div>
                <p class="Register">
-                   DO NOT HAVE AN ACCOUNT   <a href="registration_form.html" style="margin-left:5px;">SIGN UP</a>
+                   DO NOT HAVE AN ACCOUNT   <a href="sign_up" style="margin-left:5px;">SIGN UP</a>
                </p>
            </div>
        </div>

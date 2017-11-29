@@ -25,12 +25,13 @@
                <hr id="hrLong"/>
                <hr id="hrShort"/>
                <div class="FormContainer">
-                   <form action="PHP/SignIn.php" method="post">
-                       <input id="InputUsername" type="text" placeholder="      E-Mail" name="logInEMAIL"/>
+                   <form action="/verify" method="POST">
+                       <input id="InputUsername" type="text" placeholder="      Username" name="logInUsername"/>
                             <div style="margin-top:20px;">
-                                <input id="InputPassword" type="password" placeholder="      Password" name="logInPASSWORD"/>
+                                <input id="InputPassword" type="password" placeholder="      Password" name="logInPassword"/>
                             </div>
-                      <a href="dashboard"><input id="SignIn" value="Sign In"  /> </a>
+                      <input id="SignIn" type="submit" value="Sign In"  />
+                       <input type="hidden" name="_csrf" value="<?=Yii::$app->request->getCsrfToken()?>" />
                    </form>
                </div>
                <p class="Register">

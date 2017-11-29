@@ -51,6 +51,10 @@ $config = [
                 '' => 'login/render',
                 'sign_up' => 'signup/render',
                 'dashboard' => 'dashboard/render',
+                'verify' => 'userverification/verify',
+                'register' => 'createaccount/create',
+                'change/status/<id:\d+>/<status:\d+>/' => 'notestatuschange/changesstatus'
+                'change/status/<id:\d+>/<status:\d+>/' => 'notestatuschange/changesstatus'
             ],
         ],
 

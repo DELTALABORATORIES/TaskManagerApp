@@ -164,6 +164,13 @@ body {
         overflow: hidden;
     }
 
+.task-check{
+    width: 12%;
+    position: absolute;
+    right: 5%;
+    top: 8%;
+}
+
 .task-name{
     padding:13px 0px 0px 20px;
     text-align: left;
@@ -198,7 +205,6 @@ body {
     width:77%;
     background-color: white;
     min-width:850px;
-
 }
 .note-information{
     height:60px;

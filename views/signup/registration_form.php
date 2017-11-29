@@ -19,21 +19,22 @@
                     LET'S CREATE YOUR ACCOUNT
                 </p>
                 <div class="FormContainer">
-                    <form action="PHP/SignUp.php" method="post">
-                        <input id="InputUsername" type="text" placeholder="      First Name" name="logUpName"/>
+                    <form action="register" method="post">
+                        <input id="InputUsername" type="text" placeholder="      Full Name" name="signUpFullName"/>
                         <div style="margin-top:20px;">
-                            <input class="SignUpInput" type="text" placeholder="      Last Name" name="logUpLastName"/>
+                            <input class="SignUpInput" type="text" placeholder="      Username" name="signUpUsername"/>
                         </div>
                         <div style="margin-top:20px;">
-                            <input class="SignUpInput" type="email" placeholder="      Mail" name="logUpEmail"/>
+                            <input class="SignUpInput" type="email" placeholder="      Mail" name="signUpEmail"/>
                         </div>
                         <div style="margin-top:20px;">
-                            <input class="SignUpInput" type="password" placeholder="      Password" name="logUpPassword"/>
+                            <input class="SignUpInput" type="password" placeholder="      Password" name="signUpPassword"/>
                         </div>
                         <div    style="margin-top:20px;">
-                            <input class="SignUpInput" type="password" placeholder="      Repeat Password" name="logUpPassword"/>
+                            <input class="SignUpInput" type="password" placeholder="      Repeat Password" name="signUpPasswordRepeat"/>
                         </div>
                         <input id="SignUp" type="submit" value="Sign Up" formmethod="post" />
+                        <input type="hidden" name="_csrf" value="<?=Yii::$app->request->getCsrfToken()?>" />
                     </form>
                 </div>
                 <p class="Register">

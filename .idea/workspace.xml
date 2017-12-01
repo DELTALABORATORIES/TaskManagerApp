@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c7fda41-70f7-4efd-a48e-95a7b501644b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin" afterPath="$PROJECT_DIR$/runtime/cache/96/963454f612a8b5fb4a63ba1e97f028a1.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/web.php" afterPath="$PROJECT_DIR$/config/web.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/NotedumpController.php" afterPath="$PROJECT_DIR$/controllers/NotedumpController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/NotestatuschangeController.php" afterPath="$PROJECT_DIR$/controllers/NotestatuschangeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/models/noteData.php" afterPath="$PROJECT_DIR$/models/noteData.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/debug/index.data" afterPath="$PROJECT_DIR$/runtime/debug/index.data" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/runtime/logs/app.log" afterPath="$PROJECT_DIR$/runtime/logs/app.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/dashboard/dashboard.php" afterPath="$PROJECT_DIR$/views/dashboard/dashboard.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -175,7 +167,7 @@
     <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="width" value="1366" />
     <option name="height" value="768" />
   </component>
@@ -359,7 +351,7 @@
       <workItem from="1511896636581" duration="1217000" />
       <workItem from="1511937437212" duration="9649000" />
       <workItem from="1512061636808" duration="600000" />
-      <workItem from="1512110778462" duration="1267000" />
+      <workItem from="1512110778462" duration="1418000" />
     </task>
     <task id="LOCAL-00001" summary="Converted Project to Yii2 Framework">
       <created>1510487821558</created>
@@ -382,21 +374,27 @@
       <option name="project" value="LOCAL" />
       <updated>1511953712487</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Last Commit Code Corrected">
+      <created>1512146819369</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1512146819369</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70789000" />
+    <option name="totallyTimeSpent" value="70940000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="768" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13030747" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20083682" sideWeight="0.4341142" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2282092" sideWeight="0.4341142" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20083682" sideWeight="0.5658858" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2282092" sideWeight="0.5658858" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32914925" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -424,7 +422,8 @@
     <MESSAGE value="Converted Project to Yii2 Framework" />
     <MESSAGE value="Page Rendering is ready, test connection to Firebase is established" />
     <MESSAGE value="Notes dumped on screen from Firebase" />
-    <option name="LAST_COMMIT_MESSAGE" value="Notes dumped on screen from Firebase" />
+    <MESSAGE value="Last Commit Code Corrected" />
+    <option name="LAST_COMMIT_MESSAGE" value="Last Commit Code Corrected" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />

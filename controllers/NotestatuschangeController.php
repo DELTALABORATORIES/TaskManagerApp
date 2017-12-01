@@ -17,7 +17,7 @@ use yii\helpers\Html;
 class NotestatuschangeController extends GlobalController
 {
 
-    public function actionChangesstatus(){
+    public function actionChangestatus(){
 
 
         Yii::$app->request->getUrl();
@@ -39,9 +39,11 @@ class NotestatuschangeController extends GlobalController
 
         if($noteCurrentStatus === '1'){
             $database->getReference($userName)->getChild('notes/' . $noteId .  '/note_completed')->set('false');
+            echo "Done";
         }
         else if($noteCurrentStatus === '0'){
             $database->getReference($userName)->getChild('notes/' . $noteId .  '/note_completed')->set('true');
+            echo 'done';
         }
     }
 

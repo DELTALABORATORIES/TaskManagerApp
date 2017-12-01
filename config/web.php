@@ -53,8 +53,8 @@ $config = [
                 'dashboard' => 'dashboard/render',
                 'verify' => 'userverification/verify',
                 'register' => 'createaccount/create',
-                'change/status/<id:\d+>/<status:\d+>/' => 'notestatuschange/changesstatus'
-                'change/status/<id:\d+>/<status:\d+>/' => 'notestatuschange/changesstatus'
+                'change/status/<id:\d+>/<status:\d+>/' => 'notestatuschange/changestatus',
+                'note/dump/<id:\d+>' => 'notedump/dump'
             ],
         ],
 

@@ -5,7 +5,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel='stylesheet prefetch'
           href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
@@ -64,7 +64,7 @@
 
 <div class="note-editor-container">
     <div class="note-information">
-        <p class="note-name">
+        <p class="note-name" id="noteName">
             Note Name
         </p>
     </div>
@@ -103,7 +103,8 @@
         //get id and status of the task
         var id = $(this).attr('id');
         var status = $(this).attr('data-status');
-        $.ajax({url: "/change/status/"+ id + "/" + status, success: function(result){
+        $.ajax({url: "/change/status/"+ id + "/" + status,
+            success: function(data){
             //change image and status
             if (status === '1'){
                 $('#'+id).attr('src' , '../../images/CheckSigns/checked_black.svg');
@@ -117,13 +118,17 @@
                 alert('something fucked up');
             }
         }});
-    })
+    });
     $('.task').bind('click', function (data) {
-        $.ajax({url: "/change/status/"+ id + "/" + status,
-            success: function(result){
-
+        var id = $(this).attr('id');
+        $.ajax({url: "/note/dump/"+ id ,
+            success: function(data){
+                console.log(data);
+                var noteData = data.split('|');
+                $('#noteName').html(noteData[0]);
+                $('.cke_editable')[0].html(noteData[0]);
             }
-        }});
+        });
     })
 </script>
 </body>

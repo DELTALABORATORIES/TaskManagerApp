@@ -34,7 +34,7 @@ class noteData
         foreach ($noteData as $note){
             if (!$note == null){
                 if($note['note_completed'] === 'true'){
-                    echo ' <div class="task">
+                    echo ' <div class="task" id="'. $idCount .'">
                             <div>
                                 <span>
                                     <img src="../../images/CheckSigns/checked_purple.svg" class="task-check" id="'. $idCount .'" data-status="1">
@@ -54,7 +54,7 @@ class noteData
                         </div>';
                 }
                else if($note['note_completed'] === 'false'){
-                    echo ' <div class="task">
+                    echo ' <div class="task" id="'. $idCount .'">
                             <div>
                                 <span>
                                     <img src="../../images/CheckSigns/checked_black.svg" class="task-check" id="'. $idCount .'" data-status="0">

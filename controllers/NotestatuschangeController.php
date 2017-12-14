@@ -35,7 +35,7 @@ class NotestatuschangeController extends GlobalController
 
         $database = $firebase->getDatabase();
 
-        $userName = 'samo_777';
+        $userName = $_SESSION['username'];
 
         if($noteCurrentStatus === '1'){
             $database->getReference($userName)->getChild('notes/' . $noteId .  '/note_completed')->set('false');

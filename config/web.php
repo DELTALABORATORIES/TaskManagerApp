@@ -54,7 +54,8 @@ $config = [
                 'verify' => 'userverification/verify',
                 'register' => 'createaccount/create',
                 'change/status/<id:\d+>/<status:\d+>/' => 'notestatuschange/changestatus',
-                'note/dump/<id:\d+>' => 'notedump/dump'
+                'note/dump/<id:\d+>' => 'notedump/dump',
+                'changes/save' => 'savechanges/save'
             ],
         ],
 

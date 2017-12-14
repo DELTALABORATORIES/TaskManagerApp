@@ -18,7 +18,13 @@ class UserverificationController extends GlobalController
 
     public function actionVerify(){
 
-/*        $userName = Yii::$app->request->post('logInUsername');
+        $session = Yii::$app->session;
+
+        if (!$session->isActive){
+            $session->open();
+        }
+
+        $userName = Yii::$app->request->post('logInUsername');
         $userPassword = Yii::$app->request->post('logInPassword');
 
 
@@ -33,20 +39,15 @@ class UserverificationController extends GlobalController
 
         $database = $firebase->getDatabase();
 
-        var_dump(Yii::$app->request->post('logInUsername'));
-        var_dump($userName);
-        exit();
-
         $userPasswordFirebase = $database->getReference($userName)->getChild('password')->getValue();
 
         if($userPassword === $userPasswordFirebase){
             $this->redirect('dashboard');
+            $_SESSION['username'] = $userName;
         }
         else{
            $this->redirect('');
-        }*/
-
-$this->redirect('dashboard');
+        }
 
 
         /*$newPost = $database

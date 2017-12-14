@@ -16,6 +16,7 @@ class noteData
 {
 
     public function getNotes(){
+
         $serviceAccount = ServiceAccount::fromJsonFile('google-service-account.json');
         $apiKey = 'AIzaSyBhrtlVE4A5m5K2BIOUf05w5mf7P6Rigcs';
 
@@ -26,7 +27,7 @@ class noteData
 
         $database = $firebase->getDatabase();
 
-        $userName = 'samo_777';
+        $userName = $_SESSION['username'];
 
         $noteData = $database->getReference($userName)->getChild('notes')->getValue();
         $noteID = $database->getReference($userName)->getChild('notes')->getChildKeys();
@@ -34,7 +35,7 @@ class noteData
         foreach ($noteData as $note){
             if (!$note == null){
                 if($note['note_completed'] === 'true'){
-                    echo ' <div class="task" id="'. $idCount .'">
+                    echo ' <div class="task" data-id="'. $idCount .'">
                             <div>
                                 <span>
                                     <img src="../../images/CheckSigns/checked_purple.svg" class="task-check" id="'. $idCount .'" data-status="1">
@@ -53,8 +54,8 @@ class noteData
                             </div>
                         </div>';
                 }
-               else if($note['note_completed'] === 'false'){
-                    echo ' <div class="task" id="'. $idCount .'">
+                else if($note['note_completed'] === 'false'){
+                    echo ' <div class="task" data-id="' . $idCount . '">
                             <div>
                                 <span>
                                     <img src="../../images/CheckSigns/checked_black.svg" class="task-check" id="'. $idCount .'" data-status="0">

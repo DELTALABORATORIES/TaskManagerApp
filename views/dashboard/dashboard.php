@@ -12,15 +12,17 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="icon" href="../../images/Logos/DELTA_Network-normal.ico" type="image/x-icon">
     <script src="vendor/ckeditor-full/ckeditor.js"></script>
+
 </head>
 
 <body>
+
 
 <!--Sidebar Menu-->
 
 <div class=" menubar-container">
     <div style="width: 100%;margin-top: 20px;">
-        <img src="http://iconshow.me/media/images/System/plex-icons/png/System/512/task-manager.png" style="width:60%;">
+        <img src="../../images/MainLogo.png" style="width:60%;">
     </div>
     <div style="width: 100%;margin-top: 60px;">
         <i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
@@ -40,6 +42,9 @@
     <div style="width: 100%;margin-top: 20px;">
         <i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i>
     </div>
+    <div style="width: 100%; position: relative; bottom: 20px;">
+        <img src="../../images/MainLogo.png" style="width:60%;">
+    </div>
 </div>
 
 <!--Notes Preview-->
@@ -54,7 +59,7 @@
                 <?php $model->getNoteCount() ?> Notes
             </p>
         </div>
-        <?php     $model->getNotes();   ?>
+        <?php $model->getNotes(); ?>
     </div>
 
 
@@ -70,7 +75,7 @@
     </div>
     <form>
             <textarea name="note-editor" id="note-editor">
-                New Note
+                <p id="noteContent">New Note</p>
             </textarea>
     </form>
 </div>
@@ -106,30 +111,42 @@
         $.ajax({url: "/change/status/"+ id + "/" + status,
             success: function(data){
             //change image and status
-            if (status === '1'){
+            if (status == 1){
                 $('#'+id).attr('src' , '../../images/CheckSigns/checked_black.svg');
-                $('#'+id).attr('data-status' , 0)
+                $('#'+id).attr('data-status' , 0);
             }
-            else if(status === '0'){
+            else if(status == 0){
                 $('#'+id).attr('src' , '../../images/CheckSigns/checked_purple.svg');
-                $('#'+id).attr('data-status' , 1)
+                $('#'+id).attr('data-status' , 1);
             }
-            else {
-                alert('something fucked up');
-            }
-        }});
+            }});
     });
     $('.task').bind('click', function (data) {
-        var id = $(this).attr('id');
+        var id = $(this).attr('data-id');
+        console.log(id);
         $.ajax({url: "/note/dump/"+ id ,
             success: function(data){
                 console.log(data);
                 var noteData = data.split('|');
                 $('#noteName').html(noteData[0]);
-                $('.cke_editable')[0].html(noteData[0]);
+                CKEDITOR.instances['note-editor'].setData(noteData[1]);
             }
         });
-    })
+    });
+    CKEDITOR.instances['note-editor'].on('change', function() {
+        $.ajax({url: "savechanges/save",
+            type: "POST",
+            data:{
+                note_content: 'Hello'
+            },
+            dataType: "json",
+            contentType: "application/json",
+            success: function(data){
+                alert(data);
+            }
+        });
+    });
 </script>
+
 </body>
 </html>

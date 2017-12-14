@@ -12,7 +12,7 @@
    <div class="Main">
        <div class="AboutUs">
            <p class="WelcomeText">
-               WELCOME TO DELTA <br><br> "Note-taking for developer"
+               APOLLO<br><br> "Note-taking for developer"
            </p>
            <p class="Description">
                "Your markdown notes are saved automatically as you write and various formatting options have semi-live previews so you can double check what you’re writing. Text is formatted as you type.
@@ -36,6 +36,9 @@
                </div>
                <p class="Register">
                    DO NOT HAVE AN ACCOUNT   <a href="sign_up" style="margin-left:5px;">SIGN UP</a>
+               </p>
+               <p class="Register" style="margin-top: 40px;font-size: 16px">
+                   Copyright © X Labs<br />
                </p>
            </div>
        </div>

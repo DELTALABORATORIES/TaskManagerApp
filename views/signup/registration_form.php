@@ -28,21 +28,46 @@
                             <input class="SignUpInput" type="email" placeholder="      Mail" name="signUpEmail"/>
                         </div>
                         <div style="margin-top:20px;">
-                            <input class="SignUpInput" type="password" placeholder="      Password" name="signUpPassword"/>
+                            <input class="SignUpInput" type="password" placeholder="      Password" name="signUpPassword" id="password"/>
                         </div>
                         <div    style="margin-top:20px;">
-                            <input class="SignUpInput" type="password" placeholder="      Repeat Password" name="signUpPasswordRepeat"/>
+                            <input class="SignUpInput" type="password" placeholder="      Repeat Password" name="signUpPasswordRepeat" id="passwordRepeat"/>
+                            <p id="passwordMatch" style="color: white;margin: 0;font-size: 19px;visibility: hidden">Passwords do not match!</p>
                         </div>
                         <input id="SignUp" type="submit" value="Sign Up" formmethod="post" />
                         <input type="hidden" name="_csrf" value="<?=Yii::$app->request->getCsrfToken()?>" />
                     </form>
                 </div>
                 <p class="Register">
-                    Copyright © Delta Labs<br />
+                    Copyright © X Labs<br />
                 </p>
             </div>
           </div>
         </div>
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script>
+        $('#passwordRepeat').bind('input' , function () {
+            var password = $('#password').val();
+            var passwordRepeat = $('#passwordRepeat').val();
+
+            $.get("checklogin/checkpassword",
+                {
+                    password: password,
+                    passwordRepeat: passwordRepeat
+                },
+                function (data) {
+                if (data === 'true'){
+                    $('#passwordMatch').css('visibility' , 'hidden');
+                    $('#SignUp').removeAttr("disabled");
+                }
+                else {
+                    $('#passwordMatch').css('visibility' , 'visible');
+                    $('#SignUp').attr("disabled", "disabled");
+                }
+
+                });
+        });
+    </script>
+
 </body>
 </html>

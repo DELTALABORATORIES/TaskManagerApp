@@ -24,6 +24,8 @@ class NotedumpController extends GlobalController
         $data = Yii::$app->request->getQueryParams();
         $noteId = $data['id'];
 
+        $_SESSION['focused_note'] = $noteId;
+
         $serviceAccount = ServiceAccount::fromJsonFile('google-service-account.json');
         $apiKey = 'AIzaSyBhrtlVE4A5m5K2BIOUf05w5mf7P6Rigcs';
 
@@ -34,7 +36,7 @@ class NotedumpController extends GlobalController
 
         $database = $firebase->getDatabase();
 
-        $userName = 'samo_777';
+        $userName = $_SESSION['username'];
 
         $note = $database->getReference($userName)->getChild('notes/' . $noteId)->getValue();
 

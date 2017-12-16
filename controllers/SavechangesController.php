@@ -20,7 +20,7 @@ class SavechangesController extends GlobalController
 
     public function actionSave(){
         echo Yii::$app->request->post('note_content');
-        exit();
+
        $noteId = $_SESSION['focused_note'];
 
        $userName = $_SESSION['username'];

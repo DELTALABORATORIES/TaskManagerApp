@@ -121,18 +121,18 @@
             }
             }});
     });
+
     $('.task').bind('click', function (data) {
         var id = $(this).attr('data-id');
-        console.log(id);
         $.ajax({url: "/note/dump/"+ id ,
             success: function(data){
-                console.log(data);
                 var noteData = data.split('|');
                 $('#noteName').html(noteData[0]);
                 CKEDITOR.instances['note-editor'].setData(noteData[1]);
             }
         });
     });
+
     CKEDITOR.instances['note-editor'].on('change', function() {
         $.ajax({url: "savechanges/save",
             type: "POST",
@@ -142,7 +142,7 @@
             dataType: "json",
             contentType: "application/json",
             success: function(data){
-                alert(data);
+                // alert(data);
             }
         });
     });

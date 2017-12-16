@@ -1,4 +1,13 @@
-﻿<!DOCTYPE html>
+﻿<?php
+
+use yii\bootstrap\ActiveForm;
+
+$form = ActiveForm::begin([
+]);
+
+Yii::$app->controller->enableCsrfValidation = false;
+?>
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -43,6 +52,5 @@
            </div>
        </div>
    </div>
-    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

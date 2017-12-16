@@ -27,11 +27,12 @@ class noteData
 
         $database = $firebase->getDatabase();
 
-        $userName = $_SESSION['username'];
+        $userName = 'test';
 
         $noteData = $database->getReference($userName)->getChild('notes')->getValue();
         $noteID = $database->getReference($userName)->getChild('notes')->getChildKeys();
         $idCount = 0;
+
         foreach ($noteData as $note){
             if (!$note == null){
                 if($note['note_completed'] === 'true'){

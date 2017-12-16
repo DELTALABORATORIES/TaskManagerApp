@@ -20,6 +20,7 @@ class NotedumpController extends GlobalController
     public function actionDump(){
 
         $noteData = array();
+
         Yii::$app->request->getUrl();
         $data = Yii::$app->request->getQueryParams();
         $noteId = $data['id'];
